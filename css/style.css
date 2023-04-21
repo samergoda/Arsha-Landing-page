@@ -1,0 +1,79 @@
+
+  /* color: #37517e; dark blue */
+  /* #47b2e4; baby blue */
+h2{
+  padding: 10px;
+}
+ul {
+    background-color: transparent !important;
+}
+
+h1{
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 56px !important;
+}
+.card{
+  transition: .3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover{
+  transform: translateY(-8px);
+}
+.card:hover a h5{
+  color: #47b2e4;
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+.hero-animation{
+    animation: up-down 2s  ease-in-out infinite alternate-reverse ;
+    
+}
+.clients{
+  filter: grayscale(100%);
+  transition: .3s;
+}
+.clients:hover{
+  filter: grayscale(0%);
+}
+h2{
+  position: relative;
+}
+h2::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+h2::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.bg-call-section{
+  background-image: url(./../img/cta-bg.jpg);
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(../img/cta-bg.jpg) fixed center center;
+  background-attachment: fixed;
+  /* background-position: center center; */
+  background-size: cover;
+}

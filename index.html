@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/icon css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./dist/aos.css">
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./dist/aos.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Arsha</title>
+  </head>
+
+  <body>
+    <header class="bg-[#37517e] ">
+      <nav
+        id="nav" class=" text-white z-10  fixed w-full  border-gray-200 dark:bg-gray-900"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap justify-between items-center justify-between p-4"
+        >
+          <a href="#" class="flex ms-7 justify-end items-center">
+            <h3
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >
+              Arsha
+            </h3>
+          </a>
+          <button
+            data-collapse-toggle="navbar-multi-level"
+            type="button"
+            class="inline-flex  items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-multi-level"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+            <ul
+              class="flex md:bg-black bg-transparent items-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white text-white bg- rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#About"
+                  class="block py-2 pl-3 pr-4 text-white text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex text-white items-center justify-between w-full py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Dropdown
+                  <svg
+                    class="w-5 h-5 ml-1"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Dropdown<svg
+                          aria-hidden="true"
+                          class="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                              >Overview</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                              >My downloads</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                              >Billing</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                              >Rewards</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="text-white rounded-full hover:text-white border border-blue-700 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+                >
+                  Default
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container pt-24  flex justify-center items-center mx-auto px-4">
+        <div class="">
+          <h1 class="text-2xl text-white">
+            Better Solutions For Your Business
+          </h1>
+          <p class="font-bold mt-2 text-slate-400 text-xl">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <div class="">
+            <button
+              type="button"
+              class="text-white mt-9 bg-[#47b2e4] hover:bg-[#007aff] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Get Started
+            </button>
+            <button type="button" class="text-white mx-2">
+              <i class="fa-solid fa-play hover:text-blue-500"></i> Watch Video
+            </button>
+          </div>
+        </div>
+
+        <img src="./img/hero-img.png" class="w-1/2 hero-animation" alt="" />
+      </div>
+    </header>
+
+    <!-- start clients -->
+    <section id="client"   class="bg-[#f3f5fa] p-6">
+      <div 
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <img src="./img/clients/client-1.png" class="w-24 m-3 clients" alt="" />
+        <img src="./img/clients/client-2.png" class="w-24 m-3 clients" alt="" />
+        <img src="./img/clients/client-3.png" class="w-24 m-3 clients" alt="" />
+        <img src="./img/clients/client-4.png" class="w-24 m-3 clients" alt="" />
+        <img src="./img/clients/client-5.png" class="w-24 m-3 clients" alt="" />
+        <img src="./img/clients/client-6.png" class="w-24 m-3 clients" alt="" />
+      </div>
+    </section>
+    <!-- end clients -->
+
+    <!-- start about -->
+    <section id="About"  data-aos="fade-up"   class="container p-10 mx-auto">
+      <h2 class="text-[#37517e] text-center text-4xl font-extrabold">
+        ABOUT US
+      </h2>
+      <div class="columns-2 gap-4 mt-6 columns-md">
+        <div class="mt-4">
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid text-[#47b2e4] fa-check-double"></i> Ullamco
+              laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+            <li>
+              <i class="fa-solid text-[#47b2e4] fa-check-double"></i> Ullamco
+              laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+            <li>
+              <i class="fa-solid text-[#47b2e4] fa-check-double"></i> Ullamco
+              laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <button
+            class="relative mt-3 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+          >
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+            >
+              Learn More
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start about 2 -->
+    <section data-aos="fade-right" data-aos-offset="-150" class="bg-[#f3f5fa] p-6">
+      <div class="container max-w-6xl columns-2 columns-md mx-auto">
+        <div class="">
+          <h3 class="text-[#37517e] text-3xl">
+            Eum ipsam laborum deleniti
+            <span class="font-extrabold">
+              velit pariatur architecto aut nihil
+            </span>
+          </h3>
+          <p class="font-thin text-[#848484]">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            ipsum explica Expedita ipsum explica Expedita ipsum explica
+          </p>
+
+          <div
+            class="mt-3 bg-white"
+            id="accordion-color"
+            data-accordion="collapse"
+            data-active-classes="bg-white text-[#47b2e4;] dark:bg-gray-800 text-blue-600 dark:text-white"
+          >
+            <h3 id="accordion-color-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-1"
+              >
+                <span>What is Flowbite?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-6 h-6 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h3>
+            <div
+              id="accordion-color-body-1"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div
+                class="p-5 bg-white border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+              >
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  Flowbite is an open-source library of interactive components
+                  built on top of Tailwind CSS including buttons, dropdowns,
+                  modals, navbars, and more.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Check out this guide to learn how to
+                  <a
+                    href="/docs/getting-started/introduction/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >get started</a
+                  >
+                  and start developing websites even faster with components on
+                  top of Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            <h3 id="accordion-color-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-color-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-2"
+              >
+                <span>Is there a Figma file available?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-6 h-6 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h3>
+            <div
+              id="accordion-color-body-2"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-2"
+            >
+              <div
+                class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+              >
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  Flowbite is first conceptualized and designed using the Figma
+                  software so everything you see in the library has a design
+                  equivalent in our Figma file.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Check out the
+                  <a
+                    href="https://flowbite.com/figma/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Figma design system</a
+                  >
+                  based on the utility classes from Tailwind CSS and components
+                  from Flowbite.
+                </p>
+              </div>
+            </div>
+            <h3 id="accordion-color-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-color-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-3"
+              >
+                <span
+                  >What are the differences between Flowbite and Tailwind
+                  UI?</span
+                >
+                <svg
+                  data-accordion-icon
+                  class="w-6 h-6 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h3>
+            <div
+              id="accordion-color-body-3"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-3"
+            >
+              <div
+                class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+              >
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  The main difference is that the core components from Flowbite
+                  are open source under the MIT license, whereas Tailwind UI is
+                  a paid product. Another difference is that Flowbite relies on
+                  smaller and standalone components, whereas Tailwind UI offers
+                  sections of pages.
+                </p>
+                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                  However, we actually recommend using both Flowbite, Flowbite
+                  Pro, and even Tailwind UI as there is no technical reason
+                  stopping you from using the best of two worlds.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./img/why-us.png" class="w-full" alt="" />
+      </div>
+    </section>
+    <!-- end about 2 -->
+
+    <!-- start about 3 -->
+    <section data-aos="fade-up"  data-aos-offset="-400"  class="container max-w-6xl  my-8 p-5 mx-auto">
+      <div class="columns-2 columns-md">
+        <div class="flex justify-center">
+          <img src="./img/skills.png" class="w-4/5" alt="" />
+        </div>
+
+        <div class="">
+          <h3 class="text-3xl text-[#37517e] font-extrabold">
+            Voluptatem dignissimos provident quasi corporis voluptates
+          </h3>
+          <p class="font-thin text-[#848484]">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            ipsum explica Expedita ipsum explica Expedita ipsum explica
+          </p>
+
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-[#37517e] dark:text-white"
+              >HTML</span
+            >
+            <span class="text-sm font-medium text-[#37517e] dark:text-white"
+              >100%</span
+            >
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              class="bg-[#37517e] h-2.5 rounded-full"
+              style="width: 100%"
+            ></div>
+          </div>
+
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-[#37517e] dark:text-white"
+              >CSS</span
+            >
+            <span class="text-sm font-medium text-[#37517e] dark:text-white"
+              >90%</span
+            >
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              class="bg-[#37517e] h-2.5 rounded-full"
+              style="width: 90%"
+            ></div>
+          </div>
+
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-[#37517e] dark:text-white"
+              >JavaScript</span
+            >
+            <span class="text-sm font-medium text-[#37517e] dark:text-white"
+              >75%</span
+            >
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              class="bg-[#37517e] h-2.5 rounded-full"
+              style="width: 75%"
+            ></div>
+          </div>
+
+          <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-[#37517e] dark:text-white"
+              >Photohop</span
+            >
+            <span class="text-sm font-medium text-[#37517e] dark:text-white"
+              >55%</span
+            >
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div
+              class="bg-[#37517e] h-2.5 rounded-full"
+              style="width: 55%"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about 3 -->
+
+    <!-- start SERVICES -->
+    <section   class="p-14 bg-[#f3f5fa]">
+      <div class="container mx-auto" data-aos="flip-up" data-aos-offset="-800">
+        <div class="text-center">
+          <h2 class="text-[#37517e] text-4xl font-extrabold">SERVICES</h2>
+          <p class="text-[#848484]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            vero et perspiciatis at repellat enim laborum dolores accusantium
+            ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+            neque modi ipsa ipsam.
+          </p>
+        </div>
+        <div class="mt-5 gap-4 columns-1 sm:columns-4">
+          <div
+            class="card mb-3  p-6 bg-white border border-gray-200 rounded-lg hover:text-[#47b2e4] dark:bg-gray-800 dark:border-gray-700"
+          >
+            <svg
+              class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"
+              ></path>
+            </svg>
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-[#37517e] dark:text-white"
+              >
+                Need a help in Claim?
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          <div
+            class="card mb-3  p-6 bg-white border border-gray-200 rounded-lg hover:text-[#47b2e4] dark:bg-gray-800 dark:border-gray-700"
+          >
+            <svg
+              class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"
+              ></path>
+            </svg>
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-[#37517e] dark:text-white"
+              >
+                Need a help in Claim?
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          <div
+            class="card mb-3  p-6 bg-white border border-gray-200 rounded-lg hover:text-[#47b2e4] dark:bg-gray-800 dark:border-gray-700"
+          >
+            <svg
+              class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"
+              ></path>
+            </svg>
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-[#37517e] dark:text-white"
+              >
+                Need a help in Claim?
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          <div
+            class="card mb-3  p-6 bg-white border border-gray-200 rounded-lg hover:text-[#47b2e4] dark:bg-gray-800 dark:border-gray-700"
+          >
+            <svg
+              class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"
+              ></path>
+            </svg>
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-[#37517e] dark:text-white"
+              >
+                Need a help in Claim?
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- start services 2 -->
+    <section   data-aos="fade-up-right" data-aos-offset="-1200">
+      <div class="bg-call-section p-32"   >
+        <div class="container columns-2 columns-md text-white mx-auto">
+          <div class="">
+            <h3 class="font-extrabold">CALL TO ACTION</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+          <div class="flex justify-around">
+            <button
+              type="button"
+              class="text-white m-6 ease-in duration-300 items-start border bg-transparent hover:bg-[#47b2e4] focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Call To Action
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--START PORTFOLIO -->
+    <section data-aos="fade-up" data-aos-offset="-1000" >
+      <div class="container p-10 mx-auto">
+        <div class="text-center">
+          <h2 class="text-[#37517e] text-4xl font-extrabold">PORTFOLIO</h2>
+          <p class="text-[#848484]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            vero et perspiciatis at repellat enim laborum dolores accusantium
+            ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+            neque modi ipsa ipsam.
+          </p>
+        </div>
+
+        <div
+          class="mb-4 flex justify-center border-b border-gray-200 dark:border-gray-700"
+        >
+          <ul
+            class="flex flex-wrap -mb-px text-sm font-medium text-center"
+            id="myTab"
+            data-tabs-toggle="#myTabContent"
+            role="tablist"
+          >
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 rounded-t-lg"
+                id="All-tab"
+                data-tabs-target="#All"
+                type="button"
+                role="tab"
+                aria-controls="All"
+                aria-selected="false"
+              >
+                All
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="App-tab"
+                data-tabs-target="#App"
+                type="button"
+                role="tab"
+                aria-controls="App"
+                aria-selected="false"
+              >
+                App
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="Card-tab"
+                data-tabs-target="#Card"
+                type="button"
+                role="tab"
+                aria-controls="Card"
+                aria-selected="false"
+              >
+                Card
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="Web-tab"
+                data-tabs-target="#Web"
+                type="button"
+                role="tab"
+                aria-controls="Web"
+                aria-selected="false"
+              >
+                Web
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div id="myTabContent">
+          <div
+            class="hidden p-4 rounded-lg flex justify-center dark:bg-gray-800"
+            id="All"
+            role="tabpanel"
+            aria-labelledby="All-tab"
+          >
+            <div
+              class="grid grid-cols-3 grid-cols-[454.55px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+            >
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-9.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-7.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-8.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden p-4 rounded-lg dark:bg-gray-800"
+            id="App"
+            role="tabpanel"
+            aria-labelledby="App-tab"
+          >
+            <div
+              class="grid grid-cols-3 grid-cols-[454.55px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+            >
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-5.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-7.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-8.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden p-4 rounded-lg flex justify-center dark:bg-gray-800"
+            id="Card"
+            role="tabpanel"
+            aria-labelledby="Card-tab"
+          >
+            <div
+              class="grid grid-cols-1 grid-cols-[454.55px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+            >
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-4.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-5.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden p-4 rounded-lg dark:bg-gray-800"
+            id="Web"
+            role="tabpanel"
+            aria-labelledby="Web-tab"
+          >
+            <div
+              class="grid grid-cols-3 grid-cols-[454.55px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+            >
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-9.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="grid gap-4">
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="truncate">
+                  <img
+                    class="w-full hover:scale-125 transition duration-300 rounded-lg"
+                    src="./img/portfolio/portfolio-8.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section -->
+    <section data-aos="fade-down"  data-aos-offset="350">
+      <div class="p-10 bg-[#f3f5fa]"   >
+        <div class="container mx-auto"  >
+          <div class="text-center">
+            <h2 class="text-[#37517e] text-4xl font-extrabold">TEAM</h2>
+            <p class="text-[#848484]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              vero et perspiciatis at repellat enim laborum dolores accusantium
+              ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+              neque modi ipsa ipsam.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="grid gap-3 grid-cols-2 grid-cols-[454.55px] md:grid-cols-2"
+            >
+              <div
+                class="flex mt-7 items-center hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              >
+                <img
+                  class="rounded-full p-4 w-40"
+                  src="./img/team/team-1.jpg"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-[#37517e] dark:text-white"
+                  >
+                    Walter White
+                  </h5>
+                  <p
+                    class="mb-3 font-normal border-b-2 text-gray-700 dark:text-gray-400"
+                  >
+                    Chief Executive Officer.
+                  </p>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                  </p>
+                  <div class="flex">
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#3b5998] hover:bg-[#3b5998]/90"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#1da1f2] hover:bg-[#1da1f2]/90"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#d62976] hover:bg-[#d62976]/90"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex mt-7 items-center hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              >
+                <img
+                  class="rounded-full p-4 w-40"
+                  src="./img/team/team-2.jpg"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-[#37517e] dark:text-white"
+                  >
+                    Sarah Jhonson
+                  </h5>
+                  <p
+                    class="mb-3 font-normal border-b-2 text-gray-700 dark:text-gray-400"
+                  >
+                    Product Manager.
+                  </p>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Aut maiores voluptates amet et quis praesentium qui senda
+                    para
+                  </p>
+                  <div class="flex">
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#3b5998] hover:bg-[#3b5998]/90"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#1da1f2] hover:bg-[#1da1f2]/90"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#d62976] hover:bg-[#d62976]/90"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex mt-7 items-center hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              >
+                <img
+                  class="rounded-full p-4 w-40"
+                  src="./img/team/team-3.jpg"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-[#37517e] dark:text-white"
+                  >
+                    William Anderson
+                  </h5>
+                  <p
+                    class="mb-3 font-normal border-b-2 text-gray-700 dark:text-gray-400"
+                  >
+                    CTO
+                  </p>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                  </p>
+                  <div class="flex">
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#3b5998] hover:bg-[#3b5998]/90"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#1da1f2] hover:bg-[#1da1f2]/90"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#d62976] hover:bg-[#d62976]/90"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex mt-7 items-center hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              >
+                <img
+                  class="rounded-full p-4 w-40"
+                  src="./img/team/team-4.jpg"
+                  alt=""
+                />
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-[#37517e] dark:text-white"
+                  >
+                    Amanda Jepson
+                  </h5>
+                  <p
+                    class="mb-3 font-normal border-b-2 text-gray-700 dark:text-gray-400"
+                  >
+                    Accountant
+                  </p>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Dolorum tempora officiis odit laborum officiis et et
+                    accusamus
+                  </p>
+                  <div class="flex">
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#3b5998] hover:bg-[#3b5998]/90"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#1da1f2] hover:bg-[#1da1f2]/90"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#d62976] hover:bg-[#d62976]/90"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white mx-3 px-1 rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price section -->
+    <section   >
+      <div data-aos="flip-up" data-aos-offset="-350">
+        <div class="mx-auto max-w-6xl container"  >
+        <div class="text-center"   >
+          <h2 class="text-[#37517e] text-4xl font-extrabold">PRICING</h2>
+          <p class="text-[#848484]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            vero et perspiciatis at repellat enim laborum dolores accusantium
+            ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+            neque modi ipsa ipsam.
+          </p>
+        </div>
+
+        <div class="flex mt-7 justify-center">
+          <div
+            class="grid gap-4 grid-cols-3 grid-cols-[454.55px] sm:grid-cols-2 md:grid-cols-3"
+          >
+            <!-- 1  -->
+            <div
+              class="p-8 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400"
+              >
+                Standard plan
+              </h5>
+              <div class="flex items-baseline text-gray-900 dark:text-white">
+                <span class="text-3xl font-semibold">$</span>
+                <span class="text-5xl font-extrabold tracking-tight">49</span>
+                <span
+                  class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+                  >/month</span
+                >
+              </div>
+              <!-- List -->
+              <ul role="list" class="space-y-5 my-7">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >2 team members</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >20GB Cloud storage</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >Integration help</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Sketch Files</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >API Access</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Complete documentation</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >24×7 phone & email support</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-3 py-2.5 inline-flex justify-center w-full text-center"
+              >
+                Choose plan
+              </button>
+            </div>
+
+            <!-- 2 -->
+            <div
+              class="border-t-4 border-t-[#47b2e4] p-8 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400"
+              >
+                Standard plan
+              </h5>
+              <div class="flex items-baseline text-gray-900 dark:text-white">
+                <span class="text-3xl font-semibold">$</span>
+                <span class="text-5xl font-extrabold tracking-tight">49</span>
+                <span
+                  class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+                  >/month</span
+                >
+              </div>
+              <!-- List -->
+              <ul role="list" class="space-y-5 my-7">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >2 team members</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >20GB Cloud storage</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >Integration help</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Sketch Files</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >API Access</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Complete documentation</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >24×7 phone & email support</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-3 py-2.5 inline-flex justify-center w-full text-center"
+              >
+                Choose plan
+              </button>
+            </div>
+
+            <!-- 3 -->
+            <div
+              class="p-8 mx-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <h5
+                class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400"
+              >
+                Standard plan
+              </h5>
+              <div class="flex items-baseline text-gray-900 dark:text-white">
+                <span class="text-3xl font-semibold">$</span>
+                <span class="text-5xl font-extrabold tracking-tight">49</span>
+                <span
+                  class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+                  >/month</span
+                >
+              </div>
+              <!-- List -->
+              <ul role="list" class="space-y-5 my-7">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >2 team members</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >20GB Cloud storage</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                    >Integration help</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Sketch Files</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >API Access</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >Complete documentation</span
+                  >
+                </li>
+                <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg
+                    aria-hidden="true"
+                    class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Check icon</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    class="text-base font-normal leading-tight text-gray-500"
+                    >24×7 phone & email support</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-3 py-2.5 inline-flex justify-center w-full text-center"
+              >
+                Choose plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+
+    <!-- acordion section -->
+    <section >
+      <div class="p-10 bg-[#f3f5fa]">
+        <div class="container mx-auto ">
+          <div class="text-center">
+            <h2 class="text-[#37517e] mb-4 text-4xl font-extrabold">
+              FREQUENTLY ASKED QUESTIONS
+            </h2>
+            <p class="text-[#848484]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+              vero et perspiciatis at repellat enim laborum dolores accusantium
+              ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+              neque modi ipsa ipsam.
+            </p>
+          </div>
+          <div class="m-5">
+            <div
+              id="accordion-open"
+              class="bg-white"
+              data-active-classes="bg-white"
+              data-accordion="open"
+            >
+              <h3 id="accordion-open-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-open-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-open-body-1"
+                >
+                  <span class="flex items-center"
+                    ><svg
+                      class="w-5 h-5 mr-2 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    What is Flowbite?</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 rotate-180 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-open-body-1"
+                class="hidden mb-5"
+                aria-labelledby="accordion-open-heading-1"
+              >
+                <div
+                  class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is an open-source library of interactive components
+                    built on top of Tailwind CSS including buttons, dropdowns,
+                    modals, navbars, and more.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out this guide to learn how to
+                    <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >get started</a
+                    >
+                    and start developing websites even faster with components on
+                    top of Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="accordion-open-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-open-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-open-body-2"
+                >
+                  <span class="flex items-center"
+                    ><svg
+                      class="w-5 h-5 mr-2 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    >Is there a Figma file available?</span
+                  >
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-open-body-2"
+                class="hidden"
+                aria-labelledby="accordion-open-heading-2"
+              >
+                <div
+                  class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is first conceptualized and designed using the
+                    Figma software so everything you see in the library has a
+                    design equivalent in our Figma file.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out the
+                    <a
+                      href="https://flowbite.com/figma/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >Figma design system</a
+                    >
+                    based on the utility classes from Tailwind CSS and
+                    components from Flowbite.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="accordion-open-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-open-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-open-body-3"
+                >
+                  <span class="flex items-center"
+                    ><svg
+                      class="w-5 h-5 mr-2 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    What are the differences between Flowbite and Tailwind
+                    UI?</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-open-body-3"
+                class="hidden"
+                aria-labelledby="accordion-open-heading-3"
+              >
+                <div
+                  class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from
+                    Flowbite are open source under the MIT license, whereas
+                    Tailwind UI is a paid product. Another difference is that
+                    Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    However, we actually recommend using both Flowbite, Flowbite
+                    Pro, and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Learn more about these technologies:
+                  </p>
+                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li>
+                      <a
+                        href="https://flowbite.com/pro/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                        >Flowbite Pro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://tailwindui.com/"
+                        rel="nofollow"
+                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                        >Tailwind UI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3 id="accordion-open-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-open-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-open-body-4"
+                >
+                  <span class="flex items-center"
+                    ><svg
+                      class="w-5 h-5 mr-2 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    >Is there a Figma file available?</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-open-body-4"
+                class="hidden"
+                aria-labelledby="accordion-open-heading-4"
+              >
+                <div
+                  class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is an open-source library of interactive components
+                    built on top of Tailwind CSS including buttons, dropdowns,
+                    modals, navbars, and more.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out this guide to learn how to
+                    <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >get started</a
+                    >
+                    and start developing websites even faster with components on
+                    top of Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="accordion-open-heading-5">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800"
+                  data-accordion-target="#accordion-open-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-open-body-5"
+                >
+                  <span class="flex items-center"
+                    ><svg
+                      class="w-5 h-5 mr-2 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    >Is there a Figma file available?</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-open-body-5"
+                class="hidden"
+                aria-labelledby="accordion-open-heading-5"
+              >
+                <div
+                  class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is an open-source library of interactive components
+                    built on top of Tailwind CSS including buttons, dropdowns,
+                    modals, navbars, and more.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out this guide to learn how to
+                    <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >get started</a
+                    >
+                    and start developing websites even faster with components on
+                    top of Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section ////////////////////////////////////////////////////-->
+    <!-- 
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000" -->
+    <section data-aos="flip-left" data-aos-offset="-100">
+      <div class="container max-w-6xl my-5 mx-auto " >
+        <div class="text-center">
+          <h2 class="text-[#37517e] my-3 text-4xl font-extrabold">CONTACT</h2>
+          <p class="text-[#848484] mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            vero et perspiciatis at repellat enim laborum dolores accusantium
+            ducimus sed, aliquid, distinctio cupiditate iste. Pariatur odit
+            neque modi ipsa ipsam.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 grid-cols-[454.55px]">
+          <div
+            class="p-8 m-3 border-t-4 border-t-[#47b2e4] mx-5 bg-white border border-gray-200 rounded-lg shadow-lg"
+          >
+            <ul>
+              <li class="my-4">
+                <div class="flex">
+                  <i
+                    class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-location-dot"
+                  ></i>
+                  <h4 class="text-[#37517e] text-2xl">location</h4>
+                </div>
+
+                <p class="text-[#6182ba] font-thin">
+                  A108 Adam Street, New York, NY 535022
+                </p>
+              </li>
+              <li class="my-4">
+                <div class="flex">
+                  <i
+                    class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-envelope"
+                  ></i>
+                  <h4 class="text-[#37517e] text-2xl">Email:</h4>
+                </div>
+
+                <p class="text-[#6182ba] font-thin">info@example.com</p>
+              </li>
+              <li class="my-4">
+                <div class="flex">
+                  <i
+                    class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-phone"
+                  ></i>
+                  <h4 class="text-[#37517e] text-2xl">Call:</h4>
+                </div>
+
+                <p class="text-[#6182ba] font-thin">+1 5589 55488 55s</p>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="p-8 m-3 border-t-4 border-t-[#47b2e4]  bg-white border border-gray-200 rounded-lg shadow-lg"
+          >
+            <div class="grid gap-6 mb-6 md:grid-cols-2">
+              <div>
+                <label
+                  for="first_name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  id="first_name"
+                  class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="last_name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  id="last_name"
+                  class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="text"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="text"
+                class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class=" bg-[#f3f5fa]   ">
+      <footer class="mx-auto max-w-6xl container dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+              <h3
+                class="mb-6 text-3xl font-semibold text-[#37517e] uppercase dark:text-white"
+              >
+                ARSHA
+              </h3>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <p class="font-thin">A108 Adam Street</p>
+                </li>
+                <li class="mb-4">
+                  <p class="font-thin">New York, NY 535022</p>
+                </li>
+                <li class="mb-4">
+                  <p class="font-thin">United States</p>
+                </li>
+              </ul>
+              <div class="">
+                <p class="font-bold">
+                  Phone: <span class="font-thin">+1 5589 55488 55</span>
+                </p>
+                <p class="font-bold">
+                  Email: <span class="font-thin">info@example.com</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3
+                class="mb-6 text-lg font-semibold text-[#37517e] uppercase dark:text-white"
+              >
+                Useful Links
+              </h3>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >About</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Service</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Team</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="mb-6 text-lg font-semibold text-[#37517e] uppercase dark:text-white"
+              >
+                Our Services
+              </h3>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]"
+                    >Web Design</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]">
+                    Web Development</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]">
+                    Product Management</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]">
+                    Marketing
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline hover:text-[#47b2e4]">
+                    Graphic Design</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="mb-6 text-lg font-semibold text-[#37517e] uppercase dark:text-white"
+              >
+                Our Social Networks
+              </h3>
+
+              <p class="font-thin">
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+
+              <div class="flex justify-start">
+                <button
+                  type="button"
+                  class="text-white me-3 mt-4 px-1 rounded-full bg-[#3b5998] hover:bg-[#3b5998]/90"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button
+                  type="button"
+                  class="text-white me-3 mt-4 px-1 rounded-full bg-[#1da1f2] hover:bg-[#1da1f2]/90"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </button>
+                <button
+                  type="button"
+                  class="text-white me-3 mt-4 px-1 rounded-full bg-[#d62976] hover:bg-[#d62976]/90"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </button>
+                <button
+                  type="button"
+                  class="text-white me-3 mt-4 px-1 rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between"
+          >
+            <span
+              class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+              >© 2023 <a href="https://flowbite.com/">Samer Goda</a>
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Instagram page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
