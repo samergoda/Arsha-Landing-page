@@ -25,7 +25,7 @@
         class="text-white z-10 fixed w-full border-gray-200 dark:bg-gray-900"
       >
         <div
-          class="max-w-screen-xl flex flex-wrap justify-between items-center justify-between p-4"
+          class="max-w-screen-xl flex flex-wrap justify-between items-center justify-between "
         >
           <a href="#" class="flex ms-7 justify-end items-center">
             <h3
@@ -58,7 +58,7 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul
-              class="flex bg-transparent items-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex bg-transparent items-center flex-col font-medium  md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
               <li>
                 <a
@@ -221,9 +221,9 @@
       </nav>
 
       <div
-        class="container pt-24 flex justify-center items-center mx-auto px-4"
+        class="container grid-cols-[300px] pt-24 grid sm:grid-cols-3 mx-auto px-4"
       >
-        <div class="">
+        <div class="col-span-2">
           <h1 class="text-2xl text-white">
             Better Solutions For Your Business
           </h1>
@@ -243,7 +243,7 @@
           </div>
         </div>
 
-        <img src="./img/hero-img.png" class="w-1/2 hero-animation" alt="" />
+        <img src="./img/hero-img.png" class="w-full hero-animation" alt="" />
       </div>
     </header>
 
@@ -318,7 +318,7 @@
       data-aos-offset="-150"
       class="bg-[#f3f5fa] p-6"
     >
-      <div class="container max-w-6xl columns-2 columns-md mx-auto">
+      <div class="container max-w-6xl  columns-md mx-auto">
         <div class="">
           <h3 class="text-[#37517e] text-3xl">
             Eum ipsam laborum deleniti
@@ -747,7 +747,7 @@
     <!--START PORTFOLIO -->
     <!--  -->
     <section>
-      <div class="container p-10 mx-auto">
+      <div class="container	px-8  mx-auto">
         <div class="text-center">
           <h2 class="text-[#37517e] text-4xl font-extrabold">PORTFOLIO</h2>
           <p class="text-[#848484]">
@@ -769,7 +769,7 @@
           >
             <li class="mr-2" role="presentation">
               <button
-                class="inline-block p-4 border-b-2 rounded-t-lg"
+                class="inline-block  border-b-2 rounded-t-lg"
                 id="All-tab"
                 data-tabs-target="#All"
                 type="button"
@@ -782,7 +782,7 @@
             </li>
             <li class="mr-2" role="presentation">
               <button
-                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                class="inline-block  border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                 id="App-tab"
                 data-tabs-target="#App"
                 type="button"
@@ -795,7 +795,7 @@
             </li>
             <li class="mr-2" role="presentation">
               <button
-                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                class="inline-block  border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                 id="Card-tab"
                 data-tabs-target="#Card"
                 type="button"
@@ -808,7 +808,7 @@
             </li>
             <li role="presentation">
               <button
-                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                class="inline-block  border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                 id="Web-tab"
                 data-tabs-target="#Web"
                 type="button"
@@ -824,13 +824,13 @@
 
         <div id="myTabContent">
           <div
-            class="hidden p-4 rounded-lg flex justify-center dark:bg-gray-800"
+            class="hidden  rounded-lg flex justify-center dark:bg-gray-800"
             id="All"
             role="tabpanel"
             aria-labelledby="All-tab"
           >
             <div
-              class="grid grid-cols-3 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+              class="grid grid-cols-1 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
             >
               <div class="grid gap-4">
                 <div class="truncate">
@@ -906,13 +906,13 @@
           </div>
 
           <div
-            class="hidden p-4 rounded-lg dark:bg-gray-800"
+            class="hidden  rounded-lg dark:bg-gray-800"
             id="App"
             role="tabpanel"
             aria-labelledby="App-tab"
           >
             <div
-              class="grid grid-cols-3 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+              class="grid grid-cols-1 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
             >
               <div class="grid gap-4">
                 <div class="truncate">
@@ -952,7 +952,7 @@
           </div>
 
           <div
-            class="hidden p-4 rounded-lg flex justify-center dark:bg-gray-800"
+            class="hidden  rounded-lg flex justify-center dark:bg-gray-800"
             id="Card"
             role="tabpanel"
             aria-labelledby="Card-tab"
@@ -991,13 +991,13 @@
           </div>
 
           <div
-            class="hidden p-4 rounded-lg dark:bg-gray-800"
+            class="hidden  rounded-lg dark:bg-gray-800"
             id="Web"
             role="tabpanel"
             aria-labelledby="Web-tab"
           >
             <div
-              class="grid grid-cols-3 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
+              class="grid grid-cols-1 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3 gap-4"
             >
               <div class="grid gap-4">
                 <div class="truncate">
@@ -1062,7 +1062,7 @@
               class="grid gap-3 grid-cols-1 grid-cols-[350px] md:grid-cols-2"
             >
               <div
-                class="grid grid-cols-3 md:grid-col-2 p-4 mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                class="grid grid-cols-3 md:grid-col-2  mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <div class="flex justify-center">
                   <img
@@ -1117,7 +1117,7 @@
                 </div>
               </div>
               <div
-                class="grid grid-cols-3 md:grid-col-2 p-4 mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                class="grid grid-cols-3 md:grid-col-2  mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <div class="flex justify-center">
                   <img
@@ -1172,7 +1172,7 @@
                 </div>
               </div>
               <div
-                class="grid grid-cols-3 md:grid-col-2 p-4 mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                class="grid grid-cols-3 md:grid-col-2  mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <div class="flex justify-center">
                   <img
@@ -1227,7 +1227,7 @@
                 </div>
               </div>
               <div
-                class="grid grid-cols-3 md:grid-col-2 p-4 mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                class="grid grid-cols-3 md:grid-col-2  mt-7 hover:-translate-y-6 duration-300 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <div class="flex justify-center">
                   <img
@@ -1304,7 +1304,7 @@
 
           <div class="flex mt-7 justify-center">
             <div
-              class="grid gap-4 mx-3 grid-cols-3 grid-cols-[350px] sm:grid-cols-2 md:grid-cols-3"
+              class="grid gap-4 mx-3 sm:grid-cols-3 grid-cols-[300px] sm:grid-cols-2 md:grid-cols-3"
             >
               <!-- 1  -->
               <div
@@ -2216,7 +2216,7 @@
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 grid-cols-[350px]">
+        <div class="grid gap-3 grid-cols-1 grid-cols-[350px] md:grid-cols-2">
           <div
             class="p-8 m-3 border-t-4 border-t-[#47b2e4] mx-5 bg-white border border-gray-200 rounded-lg shadow-lg"
           >
