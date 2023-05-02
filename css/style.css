@@ -83,3 +83,15 @@ h2::before{
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-twitter{
+  color: #1da1f2;
+}
+.fa-instagram{
+  color: #d62976;
+}
+.fa-linkedin{
+  color: #0077b5;
+}
