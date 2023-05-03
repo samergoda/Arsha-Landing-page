@@ -19,26 +19,25 @@
   </head>
 
   <body class="dark:text-white dark:bg-gray-700">
-    <header class="bg-[#37517e] dark:bg-gray-700">
+    <header class="bg-[#37517e] h-5/6">
       <nav
         id="nav"
-        class="text-white container mx-auto p-3 z-10 fixed w-full border-gray-200 dark:bg-gray-900"
+        class="bg-transparent items-start p-3 z-10 w-full fixed border-gray-200 dark:bg-gray-900"
       >
         <div
-          class="max-w-screen-xl flex flex-wrap justify-between items-center justify-between"
+          class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto"
         >
-          <a href="#" class="flex ms-7 justify-end items-center">
-            <h3
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          <a href="#" class="flex items-center">
+            <span
+              class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >ARSHA</span
             >
-              Arsha
-            </h3>
           </a>
           <button
-            data-collapse-toggle="navbar-multi-level"
+            data-collapse-toggle="navbar-default"
             type="button"
             class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-multi-level"
+            aria-controls="navbar-default"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -56,41 +55,37 @@
               ></path>
             </svg>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
-              id="navParent"
-              class="flex bg-transparent items-center flex-col font-medium md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-700 md:dark:bg-gray-900 dark:border-gray-700"
+              class="font-medium flex items-center flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
               <li>
                 <a
-                  href="#About"
-                  class="block list py-2 pl-3 pr-4 active text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 active"
                   aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block list py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  aria-current="page"
-                  >Service</a
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block list py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  aria-current="page"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block list py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  aria-current="page"
-                  >Team</a
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
                 >
               </li>
               <li>
@@ -118,6 +113,13 @@
                 <div
                   id="dropdownNavbar"
                   class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  data-popper-placement="bottom"
+                  style="
+                    position: absolute;
+                    inset: 0px auto auto 0px;
+                    margin: 0px;
+                    transform: translate(953px, 59px);
+                  "
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -155,6 +157,15 @@
                       <div
                         id="doubleDropdown"
                         class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                        style="
+                          position: absolute;
+                          inset: 0px auto auto 0px;
+                          margin: 0px;
+                          transform: translate(10px, 0px);
+                        "
+                        data-popper-reference-hidden=""
+                        data-popper-escaped=""
+                        data-popper-placement="right-start"
                       >
                         <ul
                           class="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -204,7 +215,7 @@
               <li>
                 <a
                   href="#"
-                  class="block list py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#47b2e4] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Contact</a
                 >
               </li>
@@ -227,7 +238,7 @@
                   </svg>
                   <svg
                     id="theme-toggle-light-icon"
-                    class="hidden w-5 h-5"
+                    class="w-5 h-5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2238,7 +2249,11 @@
 
     <!-- contact section ////////////////////////////////////////////////////-->
     <!--  -->
-    <section data-aos="flip-left" data-aos-offset="-100">
+    <section
+      data-aos="flip-left"
+      class="dark:text-white dark:bg-gray-700"
+      data-aos-offset="-100"
+    >
       <div class="container max-w-6xl my-5 mx-auto">
         <div class="text-center">
           <h2 class="text-[#37517e] my-3 text-4xl font-extrabold">CONTACT</h2>
@@ -2252,18 +2267,20 @@
 
         <div class="grid gap-3 grid-cols-1 grid-cols-[350px] md:grid-cols-2">
           <div
-            class="p-8 m-3 border-t-4 border-t-[#47b2e4] mx-5 bg-white border border-gray-200 rounded-lg shadow-lg"
+            class="p-8 dark:text-white dark:bg-gray-700 m-3 border-t-4 border-t-[#47b2e4] mx-5 bg-white border border-gray-200 rounded-lg shadow-lg"
           >
-            <ul>
+            <ul class="">
               <li class="my-4">
                 <div class="flex">
                   <i
                     class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-location-dot"
                   ></i>
-                  <h4 class="text-[#37517e] text-2xl">location</h4>
+                  <h4 class="dark:text-white text-[#37517e] text-2xl">
+                    location
+                  </h4>
                 </div>
 
-                <p class="text-[#6182ba] font-thin">
+                <p class="text-[#6182ba] dark:text-white font-thin">
                   A108 Adam Street, New York, NY 535022
                 </p>
               </li>
@@ -2272,26 +2289,32 @@
                   <i
                     class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-envelope"
                   ></i>
-                  <h4 class="text-[#37517e] text-2xl">Email:</h4>
+                  <h4 class="dark:text-white text-[#37517e] text-2xl">
+                    Email:
+                  </h4>
                 </div>
 
-                <p class="text-[#6182ba] font-thin">info@example.com</p>
+                <p class="text-[#6182ba] dark:text-white font-thin">
+                  info@example.com
+                </p>
               </li>
               <li class="my-4">
                 <div class="flex">
                   <i
                     class="bg-[#e7f5fb] mx-1 rounded-full text-[#47b2e4] hover:text-[#e7f5fb] hover:bg-[#47b2e4] py-4 px-2 fa-xl fa-solid fa-phone"
                   ></i>
-                  <h4 class="text-[#37517e] text-2xl">Call:</h4>
+                  <h4 class="dark:text-white text-[#37517e] text-2xl">Call:</h4>
                 </div>
 
-                <p class="text-[#6182ba] font-thin">+1 5589 55488 55s</p>
+                <p class="text-[#6182ba] dark:text-white font-thin">
+                  +1 5589 55488 55s
+                </p>
               </li>
             </ul>
           </div>
 
           <form
-            class="p-8 m-3 border-t-4 border-t-[#47b2e4] bg-white border border-gray-200 rounded-lg shadow-lg"
+            class="p-8 dark:text-white dark:bg-gray-700 m-3 border-t-4 border-t-[#47b2e4] bg-white border border-gray-200 rounded-lg shadow-lg"
           >
             <div class="grid gap-6 mb-6 md:grid-cols-2">
               <div>
@@ -2579,6 +2602,5 @@
 
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>

@@ -4,11 +4,15 @@
 h2{
   padding: 10px;
 }
+
 .active{
-  color: #47b2e4;
+  color: #47b2e4 !important;
 }
 ul {
     background-color: transparent !important;
+}
+.block{
+  color: white;
 }
 
 h1{
