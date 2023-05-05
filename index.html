@@ -11,15 +11,15 @@
     />
     <link rel="stylesheet" href="./css/icon css/all.min.css" />
     <link rel="stylesheet" href="./dist/aos.css" />
-    <script defer src="./dist/aos.js"></script>
-    <script defer src="./js/script.js"></script>
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./dist/aos.js"></script>
+    <script defer src="./js/script.js"></script>
     <title>Arsha</title>
   </head>
 
   <body class="dark:text-white dark:bg-gray-700">
-    <header class="bg-[#37517e] h-5/6">
+    <header class="bg-[#37517e] dark:bg-gray-700 h-5/6">
       <nav
         id="nav"
         class="bg-transparent items-start p-3 z-10 w-full fixed border-gray-200 dark:bg-gray-900"
@@ -223,7 +223,7 @@
                 <button
                   id="theme-toggle"
                   type="button"
-                  class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+                  class="text-white dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
                 >
                   <svg
                     id="theme-toggle-dark-icon"
@@ -362,11 +362,7 @@
 
     <!-- start about 2 -->
     <!--  -->
-    <section
-      data-aos="fade-right"
-      data-aos-offset="-150"
-      class="bg-[#f3f5fa] p-6 dark:bg-gray-800"
-    >
+    <section data-aos="fade-right" class="bg-[#f3f5fa] p-6 dark:bg-gray-800">
       <div class="container max-w-6xl columns-md mx-auto">
         <div class="">
           <h3 class="text-[#37517e] text-3xl">
@@ -542,11 +538,7 @@
 
     <!-- start about 3 -->
     <!--  -->
-    <section
-      data-aos="fade-up"
-      data-aos-offset="-400"
-      class="container max-w-6xl my-8 p-5 mx-auto"
-    >
+    <section data-aos="fade-up" class="container max-w-6xl my-8 p-5 mx-auto">
       <div class="columns-2 columns-md">
         <div class="flex justify-center">
           <img src="./img/skills.png" class="w-4/5" alt="" />
@@ -626,8 +618,8 @@
     <!-- end about 3 -->
 
     <!-- start SERVICES -->
-    <section class="p-14 bg-[#f3f5fa] dark:bg-gray-800">
-      <!-- data-aos="flip-up" data-aos-offset="-800" -->
+    <section class="p-14 bg-[#f3f5fa] dark:bg-gray-800" data-aos="flip-left">
+      <!-- data-aos="flip-up"  -->
       <div class="container mx-auto">
         <div class="text-center">
           <h2 class="text-[#37517e] text-4xl font-extrabold">SERVICES</h2>
@@ -769,7 +761,7 @@
 
     <!-- start services 2 -->
     <!--  -->
-    <section class="" data-aos="fade-up-right" data-aos-offset="-1200">
+    <section class="" data-aos="fade-up-right">
       <div class="bg-call-section service">
         <div class="grid grid-cols-[300px] sm:grid-cols-3 text-white">
           <div class="pl-8 col-span-2">
@@ -796,7 +788,11 @@
     <!--START PORTFOLIO -->
     <!--  -->
     <section>
-      <div class="container px-8 mx-auto">
+      <div
+        class="container px-8 mx-auto"
+        data-aos="flip-right"
+        data-aos-duration="1500"
+      >
         <div class="text-center">
           <h2 class="text-[#37517e] text-4xl font-extrabold">PORTFOLIO</h2>
           <p class="text-[#848484]">
@@ -1090,11 +1086,7 @@
 
     <!-- Team section -->
     <!--  -->
-    <section
-      class="p-10 bg-[#f3f5fa] dark:bg-gray-800"
-      data-aos="fade-down"
-      data-aos-offset="350"
-    >
+    <section class="p-10 bg-[#f3f5fa] dark:bg-gray-800" data-aos="zoom-in">
       <div class="container mx-auto">
         <div class="">
           <div class="text-center">
@@ -1115,7 +1107,7 @@
               >
                 <div class="flex justify-center">
                   <img
-                    class="rounded-full max-sm:h-20 w-full"
+                    class="rounded-full max-h max-h w-full"
                     src="./img/team/team-1.jpg"
                     alt=""
                   />
@@ -1166,7 +1158,7 @@
               >
                 <div class="flex justify-center">
                   <img
-                    class="rounded-full max-sm:h-20 w-full"
+                    class="rounded-full max-h max-h-24 w-full"
                     src="./img/team/team-2.jpg"
                     alt=""
                   />
@@ -1221,7 +1213,7 @@
               >
                 <div class="flex justify-center">
                   <img
-                    class="rounded-full max-sm:h-20 w-full"
+                    class="rounded-full max-h max-h-24 sm:max-h-40 w-full"
                     src="./img/team/team-3.jpg"
                     alt=""
                   />
@@ -1276,7 +1268,7 @@
               >
                 <div class="flex justify-center">
                   <img
-                    class="rounded-full max-sm:h-20 w-full"
+                    class="rounded-full max-h max-h-24 sm:max-h-40 w-full"
                     src="./img/team/team-4.jpg"
                     alt=""
                   />
@@ -1333,7 +1325,7 @@
     </section>
 
     <!-- price section -->
-    <section data-aos="flip-right" class="my-8" data-aos-offset="-350">
+    <section data-aos="flip-right" class="my-8">
       <!-- data-aos="flip-up"  -->
       <div>
         <div class="mx-auto max-w-6xl container">
@@ -2249,11 +2241,7 @@
 
     <!-- contact section ////////////////////////////////////////////////////-->
     <!--  -->
-    <section
-      data-aos="flip-left"
-      class="dark:text-white dark:bg-gray-700"
-      data-aos-offset="-100"
-    >
+    <section data-aos="flip-left" class="dark:text-white dark:bg-gray-700">
       <div class="container max-w-6xl my-5 mx-auto">
         <div class="text-center">
           <h2 class="text-[#37517e] my-3 text-4xl font-extrabold">CONTACT</h2>
