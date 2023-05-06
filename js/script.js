@@ -117,17 +117,16 @@ const Scroll = $(window).scrollTop() , // This variable finds the distance you h
           $('.services , .portfolio, .about , .price , .contact , .home').removeClass('active')
            // Adds class of current-menu-item to the menu item with a class of menu-item-2
       } 
-      if (Scroll >= contactSection) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-          $(".contact").addClass("active");
-          $('.services , .about, .team , .price , .portfolio , .home').removeClass('active')
-         // Adds class of current-menu-item to the menu item with a class of menu-item-2
-      } 
       if (Scroll >= priceSection) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
           $(".price").addClass("active");
           $('.services , .about, .team , .contact , .portfolio , .home').removeClass('active')
          // Adds class of current-menu-item to the menu item with a class of menu-item-2
       } 
-      
+      if (Scroll >= contactSection) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
+          $(".contact").addClass("active");
+          $('.services , .about, .team , .price , .portfolio , .home').removeClass('active')
+         // Adds class of current-menu-item to the menu item with a class of menu-item-2
+      } 
   });
 });
 
