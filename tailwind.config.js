@@ -4,7 +4,9 @@ module.exports = {
   content: ['./index.html',
   './js/script.js'],
   theme: {
-    extend: {},
+    screens: {
+      'xs': '320px'
+    }
   },
   plugins: [require('flowbite/plugin')],
 }

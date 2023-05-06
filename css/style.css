@@ -1,18 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
 
-  /* color: #37517e; dark blue */
-  /* #47b2e4; baby blue */
 h2{
   padding: 10px;
 }
-
-@media (min-width:300px) and (max-width:450px) {
-  .max-h{
-  height: 80px;
-  width: 80px;
-}
-}
-
-
 
 .active{
   color: #47b2e4 !important;
@@ -40,6 +32,9 @@ h1{
   color: #47b2e4;
 }
 
+#About p, li{
+  color: black;
+}
 @keyframes up-down {
     0% {
       transform: translateY(10px);
